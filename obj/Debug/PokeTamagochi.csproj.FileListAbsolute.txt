@@ -1,0 +1,10 @@
+C:\Users\lenovo\source\repos\PokeTamagochi\bin\Debug\PokeTamagochi.exe.config
+C:\Users\lenovo\source\repos\PokeTamagochi\bin\Debug\PokeTamagochi.exe
+C:\Users\lenovo\source\repos\PokeTamagochi\bin\Debug\PokeTamagochi.pdb
+C:\Users\lenovo\source\repos\PokeTamagochi\obj\Debug\PokeTamagochi.csprojAssemblyReference.cache
+C:\Users\lenovo\source\repos\PokeTamagochi\obj\Debug\PokeTamagochi.StartForm.resources
+C:\Users\lenovo\source\repos\PokeTamagochi\obj\Debug\PokeTamagochi.PokeTamagochi.resources
+C:\Users\lenovo\source\repos\PokeTamagochi\obj\Debug\PokeTamagochi.Properties.Resources.resources
+C:\Users\lenovo\source\repos\PokeTamagochi\obj\Debug\PokeTamagochi.csproj.GenerateResource.cache
+C:\Users\lenovo\source\repos\PokeTamagochi\obj\Debug\PokeTamagochi.exe
+C:\Users\lenovo\source\repos\PokeTamagochi\obj\Debug\PokeTamagochi.pdb
