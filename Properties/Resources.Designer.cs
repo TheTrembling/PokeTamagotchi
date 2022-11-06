@@ -63,6 +63,16 @@ namespace PokeTamagochi.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _continue {
+            get {
+                object obj = ResourceManager.GetObject("continue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background {
             get {
                 object obj = ResourceManager.GetObject("background", resourceCulture);
@@ -96,16 +106,6 @@ namespace PokeTamagochi.Properties {
         internal static System.Drawing.Bitmap cntn2 {
             get {
                 object obj = ResourceManager.GetObject("cntn2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap continue3 {
-            get {
-                object obj = ResourceManager.GetObject("continue3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,16 +226,6 @@ namespace PokeTamagochi.Properties {
         internal static System.Drawing.Bitmap sleeping {
             get {
                 object obj = ResourceManager.GetObject("sleeping", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap start_form_background {
-            get {
-                object obj = ResourceManager.GetObject("start_form_background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

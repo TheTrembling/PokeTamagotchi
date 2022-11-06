@@ -48,7 +48,7 @@
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(331, 36);
             this.status.TabIndex = 1;
-            this.status.Text = "Ваш покемон умер от старости.";
+            this.status.Text = "Ваш покемон помер від старості.";
             this.status.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // name

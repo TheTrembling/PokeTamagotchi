@@ -54,7 +54,7 @@
             // newGame
             // 
             this.newGame.BackColor = System.Drawing.Color.Transparent;
-            this.newGame.Image = global::PokeTamagochi.Properties.Resources.newgame;
+            this.newGame.Image = ((System.Drawing.Image)(resources.GetObject("newGame.Image")));
             this.newGame.Location = new System.Drawing.Point(32, 177);
             this.newGame.Name = "newGame";
             this.newGame.Size = new System.Drawing.Size(254, 88);

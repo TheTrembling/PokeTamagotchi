@@ -75,7 +75,7 @@ namespace PokeTamagochi
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if (accept.Text == "Нажмите Enter, чтобы подтвердить свой выбор.")
+                if (accept.Text == "Натисніть Enter, щоб підтвердити свій вибір.")
                 {
 
                     DirectoryInfo di = new DirectoryInfo($"Pokemons/{name.Text}");
@@ -89,7 +89,7 @@ namespace PokeTamagochi
                             sw.WriteLine(pokemonName);
                             sw.WriteLine("1");
                             sw.WriteLine("50");
-                            sw.WriteLine("Здоров");
+                            sw.WriteLine("Здоровий");
                             sw.WriteLine("0");
                             sw.WriteLine("0");
                             sw.WriteLine("20");
@@ -115,7 +115,7 @@ namespace PokeTamagochi
                         this.Hide();
                         pt.ShowDialog();
                     }
-                    else MessageBox.Show("Данное имя уже занято.");
+                    else MessageBox.Show("Дане ім'я вже зайняте.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             if (e.KeyCode == Keys.Escape)
@@ -135,18 +135,18 @@ namespace PokeTamagochi
                 {
                     name.Text = "";
                     accept.ForeColor = Color.IndianRed;
-                    accept.Text = "Имя не может быть пустым или состоять из пробелов.";
+                    accept.Text = "Ім'я не може бути пустим або містити пробіли.";
                 }
                 else
                 {
                     accept.ForeColor = Color.PaleGreen;
-                    accept.Text = "Нажмите Enter, чтобы подтвердить свой выбор.";
+                    accept.Text = "Натисніть Enter, щоб підтвердити свій вибір.";
                 }
             }
             else
             {
                 accept.ForeColor = Color.IndianRed;
-                accept.Text = "Имя не может быть пустым или состоять из пробелов.";
+                accept.Text = "Ім'я не може бути пустим або містити пробіли.";
             }
         }
 

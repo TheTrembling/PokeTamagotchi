@@ -29,17 +29,42 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PokemonSelection));
+            this.name = new System.Windows.Forms.TextBox();
+            this.accept = new System.Windows.Forms.Label();
             this.pokemon = new System.Windows.Forms.PictureBox();
             this.right = new System.Windows.Forms.PictureBox();
             this.left = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.name = new System.Windows.Forms.TextBox();
-            this.accept = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.right)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.left)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // name
+            // 
+            this.name.BackColor = System.Drawing.Color.Black;
+            this.name.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.name.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.name.ForeColor = System.Drawing.Color.Firebrick;
+            this.name.Location = new System.Drawing.Point(39, 419);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(245, 27);
+            this.name.TabIndex = 4;
+            this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
+            this.name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.name_KeyDown);
+            // 
+            // accept
+            // 
+            this.accept.BackColor = System.Drawing.Color.Transparent;
+            this.accept.ForeColor = System.Drawing.Color.IndianRed;
+            this.accept.Location = new System.Drawing.Point(12, 458);
+            this.accept.Name = "accept";
+            this.accept.Size = new System.Drawing.Size(303, 23);
+            this.accept.TabIndex = 5;
+            this.accept.Text = "Ім\'я не може бути пустим або містити пробіли.";
+            this.accept.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pokemon
             // 
@@ -88,31 +113,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(327, 490);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // name
-            // 
-            this.name.BackColor = System.Drawing.Color.Black;
-            this.name.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.name.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.name.ForeColor = System.Drawing.Color.Firebrick;
-            this.name.Location = new System.Drawing.Point(39, 419);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(245, 27);
-            this.name.TabIndex = 4;
-            this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
-            this.name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.name_KeyDown);
-            // 
-            // accept
-            // 
-            this.accept.BackColor = System.Drawing.Color.Transparent;
-            this.accept.ForeColor = System.Drawing.Color.IndianRed;
-            this.accept.Location = new System.Drawing.Point(12, 458);
-            this.accept.Name = "accept";
-            this.accept.Size = new System.Drawing.Size(303, 23);
-            this.accept.TabIndex = 5;
-            this.accept.Text = "Имя не может быть пустым или состоять из пробелов.";
-            this.accept.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // PokemonSelection
             // 

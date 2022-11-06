@@ -67,7 +67,7 @@
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(141, 23);
             this.status.TabIndex = 3;
-            this.status.Text = "Здоров";
+            this.status.Text = "Здоровий";
             this.status.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // happiness
@@ -103,7 +103,7 @@
             this.satiety.Name = "satiety";
             this.satiety.Size = new System.Drawing.Size(148, 23);
             this.satiety.TabIndex = 6;
-            this.satiety.Text = "Сытость: 0/20";
+            this.satiety.Text = "Ситість: 0/20";
             this.satiety.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // toilet
@@ -139,7 +139,7 @@
             this.energy.Name = "energy";
             this.energy.Size = new System.Drawing.Size(149, 23);
             this.energy.TabIndex = 9;
-            this.energy.Text = "Энергия: 10/20";
+            this.energy.Text = "Енергія: 10/20";
             this.energy.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // timer

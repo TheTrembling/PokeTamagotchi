@@ -269,5 +269,29 @@
   <ItemGroup>
     <None Include="Resources\healing.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cntn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cntn21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newgame1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newgame21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\continue6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choose_your_pokemon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nexbutton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nextbutton21.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

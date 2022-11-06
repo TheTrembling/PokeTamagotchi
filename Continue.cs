@@ -47,7 +47,7 @@ namespace PokeTamagochi
                 }
                 else
                 {
-                    MessageBox.Show("Выберите покемона из списка.", "Ошибка выбора", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Оберіть покемона зі списку.", "Помилка вибору", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (Exception) { };

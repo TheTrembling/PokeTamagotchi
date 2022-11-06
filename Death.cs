@@ -56,10 +56,10 @@ namespace PokeTamagochi
         {
             pokemon.Image = Image.FromFile($"Tombstone Images/{Pokemon}.png");
 
-            if (Status == "Болен")
-                status.Text = "Ваш покемон умер от болезни.";
+            if (Status == "Хворий")
+                status.Text = "Ваш покемон помер від хвороби.";
             else
-                status.Text = "Ваш покемон умер от старости.";
+                status.Text = "Ваш покемон помер від старості.";
 
             using (StreamReader sr = new StreamReader($"Pokemons/{name.Text}/birthday.txt"))
             {

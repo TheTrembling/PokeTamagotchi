@@ -108,10 +108,10 @@ namespace PokeTamagochi
             if (form == 2) happiness.Text = $"{hppnss}/300";
             if(form == 3) happiness.Text = $"{hppnss}/...";
 
-            satiety.Text = $"Сытость: {st}/20";
+            satiety.Text = $"Ситість: {st}/20";
             toilet.Text = $"Туалет: {tlt}/20";
             sleep.Text = $"Сон: {slp}/20";
-            energy.Text = $"Энергия: {en}/20";
+            energy.Text = $"Енергія: {en}/20";
         }
 
         private void LoadAll()
@@ -189,7 +189,7 @@ namespace PokeTamagochi
 
         private void ignore_Click(object sender, EventArgs e)
         {
-            if (status.Text == "Болен")
+            if (status.Text == "Хворий")
                 death();
 
             happinessChange(false);
@@ -212,10 +212,10 @@ namespace PokeTamagochi
         {
             if (x == false)
             {
-                if (request.Text == "Хочу спать!")
+                if (request.Text == "Хочу спати!")
                 {
                     isSleeping = true;
-                    satisfyFunction(3, "Приятных снов...");
+                    satisfyFunction(3, "Приємних снів...");
                     pokemon.BackgroundImage = Properties.Resources.sleeping;
                 }
 
@@ -226,31 +226,31 @@ namespace PokeTamagochi
                     pokemon.BackgroundImage = Properties.Resources.toilet;
                 }
 
-                if (request.Text == "Хочу гулять!")
+                if (request.Text == "Хочу гуляти!")
                 {
                     isWalking = true;
-                    satisfyFunction(1, "Как же тут весело! <3");
+                    satisfyFunction(1, "Як же тут весело! <3");
                     pokemon.BackgroundImage = Properties.Resources.walk;
                 }
 
-                if (request.Text == "Хочу кушать!")
+                if (request.Text == "Хочу їсти!")
                 {
                     isEating = true;
-                    satisfyFunction(2, "Как вкусно! <3");
+                    satisfyFunction(2, "Як смачно! <3");
                 }
 
-                if (request.Text == "Мне плохо...")
+                if (request.Text == "Мені погано...")
                 {
                     isHealing = true;
-                    satisfyFunction(4, "Мне уже немного лучше...");
+                    satisfyFunction(4, "Мені вже трохи ліпше...");
                 }
             }
             if(x == true)
             {
-                if (request.Text == "Приятных снов...")
+                if (request.Text == "Приємних снів...")
                 {
                     isSleeping = true;
-                    satisfyFunction(3, "Приятных снов...");
+                    satisfyFunction(3, "Приємних снів...");
                     pokemon.BackgroundImage = Properties.Resources.sleeping;
                 }
 
@@ -261,23 +261,23 @@ namespace PokeTamagochi
                     pokemon.BackgroundImage = Properties.Resources.toilet;
                 }
 
-                if (request.Text == "Как же тут весело! <3")
+                if (request.Text == "Як же тут весело! <3")
                 {
                     isWalking = true;
-                    satisfyFunction(1, "Как же тут весело! <3");
+                    satisfyFunction(1, "Як же тут весело! <3");
                     pokemon.BackgroundImage = Properties.Resources.walk;
                 }
 
-                if (request.Text == "Как вкусно! <3")
+                if (request.Text == "Як смачно! <3")
                 {
                     isEating = true;
-                    satisfyFunction(2, "Как вкусно! <3");
+                    satisfyFunction(2, "Як смачно! <3");
                 }
 
-                if (request.Text == "Мне уже немного лучше...")
+                if (request.Text == "Мені вже трохи ліпше...")
                 {
                     isHealing = true;
-                    satisfyFunction(4, "Мне уже немного лучше...");
+                    satisfyFunction(4, "Мені вже трохи ліпше...");
                 }
             }
             resetTimer();
@@ -360,7 +360,7 @@ namespace PokeTamagochi
 
             if (hppnss == 0)
             {
-                status.Text = "Болен";
+                status.Text = "Хворий";
                 pokemon.Image = Image.FromFile($"Animations/IsSick/{pok}.gif");
             }
             RefreshValues();
@@ -408,48 +408,48 @@ namespace PokeTamagochi
             if (requests == true) actions = false;
 
 
-            if (isHealing == false && status.Text == "Болен")
+            if (isHealing == false && status.Text == "Хворий")
             {
-                request.Text = "Мне плохо...";
+                request.Text = "Мені погано...";
 
-                actionChange(true, "Вылечить", "Проигнорировать");
+                actionChange(true, "Вилікувати", "Проігнорувати");
             }
 
-            if (actions == false && status.Text == "Здоров")
+            if (actions == false && status.Text == "Здоровий")
             {
                 if (en == 20)
                 {
-                    request.Text = "Хочу гулять!";
+                    request.Text = "Хочу гуляти!";
 
-                    actionChange(true, "Выгулять", "Остаться дома");
+                    actionChange(true, "Вигуляти", "Залишитися вдома");
                 }
 
                 if (slp == 0)
                 {
-                    request.Text = "Хочу спать!";
+                    request.Text = "Хочу спати!";
 
-                    actionChange(true, "Уложить спать", "Проигнорировать");
+                    actionChange(true, "Укласти спати", "Проігнорувати");
                 }
 
                 if (tlt == 20)
                 {
                     request.Text = "Хочу в туалет!";
 
-                    actionChange(true, "Отвести", "Проигнорировать");
+                    actionChange(true, "Відвести", "Проігнорувати");
                 }
 
                 if (st == 0)
                 {
-                    request.Text = "Хочу кушать!";
+                    request.Text = "Хочу їсти!";
 
-                    actionChange(true, "Покормить", "Отказать");
+                    actionChange(true, "Погодувати", "Відмовити");
                 }
             }
         }
 
         public void defaultValues(string str)
         {
-            status.Text = "Здоров";
+            status.Text = "Здоровий";
             pokemon.Image = Image.FromFile($"Animations/Front/{pok}.gif");
             pokemon.BackgroundImage = Properties.Resources.room;
             happinessChange(true);
@@ -465,7 +465,7 @@ namespace PokeTamagochi
                 if(minutes == 0 && seconds == 0)
                 {
                     isHealing = false;
-                    defaultValues("Я выздоровел!");
+                    defaultValues("Я одужав!");
                     hppnss += 10;
 
                     RefreshValues();
@@ -484,7 +484,7 @@ namespace PokeTamagochi
                     if (minutes == 0 && seconds == 0)
                     {
                         isWalking = false;
-                        defaultValues("Спасибо за прогулку!");
+                        defaultValues("Дякую за прогулянку!");
                     }
                 }
 
@@ -502,7 +502,7 @@ namespace PokeTamagochi
                     if (minutes == 0 && seconds == 0)
                     {
                         isEating = false;
-                        defaultValues("Спасибо за еду!");
+                        defaultValues("Дякую за їжу!");
                         isFull = true;
                     }
                 }
@@ -521,7 +521,7 @@ namespace PokeTamagochi
                     if (minutes == 0 && seconds == 0)
                     {
                         isSleeping = false;
-                        defaultValues("Я выспался!");
+                        defaultValues("Я виспався!");
                     }
             }
 
@@ -554,7 +554,7 @@ namespace PokeTamagochi
                     if (minutes == 0 && seconds == 0)
                     {
                         inToilet = false;
-                        defaultValues("Я всё!");
+                        defaultValues("Я все!");
                         isFull = false;
                     }
                 }
@@ -649,7 +649,7 @@ namespace PokeTamagochi
         {
             lifeCount++;
 
-            if ((status.Text == "Болен" && minutes == 0 && seconds == 1 && isHealing == false) || (lifeCount == 432000))
+            if ((status.Text == "Хворий" && minutes == 0 && seconds == 1 && isHealing == false) || (lifeCount == 432000))
             {
                 death();
             }
